@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mystore</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cute+Font|Montserrat|Roboto');
+
+        body{
+            background-image: url("https://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .intro{
+            color: #2c2389;
+            text-align: center;
+        }
+        .half{
+            width: 50%;
+        }
+        .left{
+            float: left;
+        }
+        .right{
+            float: right;
+        }
+        .normalButton{
+            font-family: "Roboto", sans-serif;
+            outline: 0;
+            margin: 10 0 0;
+            background: #0f0e75;
+            border: 1;
+            border-color: #0f2a54;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 10 10 10 10;
+        }
+        .normalButton:hover,.normalButton:active{
+            background: #11a2fc;
+        }
+        .center{
+            margin: auto;
+            width: 50%;
+        }
+        .item-container {
+            box-sizing: border-box;
+            float: left;
+            width: 33.33%;
+            padding: 100px;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .productImage{
+            width: 100%;
+        }
+        .buyButton{
+            cursor: pointer;
+            background-color: #5016c2;
+            width: 100%;
+        }
+        .buyButton:hover,.buyButton:active{
+            background: #157ded;
+        }
+
+        .buyButton-container{
+            padding:10px 0px 5px;
+        }
+
+
+        .loginPage{
+            width: 500px;
+            padding: 10 0 0;
+            margin: auto;
+        }
+        .form{
+            position: relative;
+            z-index: 2;
+            background: #2e57f7;
+            max-width: 500px;
+            padding: 45px;
+            margin: 0 auto 100px;
+            text-align: center;
+        }
+
+        .form input{
+            font-family: "Roboto",sans-serif;
+            outline: 1;
+            background: #f4f4f4;
+            width: 100%;
+            border: 0;
+            margin: 0px 0px 0px;
+            padding: 15px;
+            box-sizing: border-box;
+            font-size: 15px;
+        }
+
+        .form button{
+            font-family: "Roboto", sans-serif;
+            text-transform: uppercase;
+            outline: 0;
+            margin: 10px 0px 0px;
+            background: #0f0e75;
+            width: 100%;
+            border: 1;
+            border-color: #0f2a54;
+            color: #ffffff;
+            cursor: pointer;
+            font-size: 15px;
+            padding: 15px;
+
+        }
+
+        .form button:hover,.form button:active{
+            background: #1312a8;
+        }
+
+        .form .message{
+            font-size: 12px;
+            font-family: 'Montserrat', cursive;
+        }
+
+        .form .message a{
+            color: #0f0e9e;
+            font-size: 12px;
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
+        }
+        .form input[type=submit] {
+            background-color:#0f0e75;
+            color: white;
+            margin: 10px 0px 0px;
+        }
+        .form p{
+            float: left;
+        }
+
+    </style>
+  </head>
+  <body>
+    <h2 class="intro">Welcome to our shop</h2>
+    <h2 class="intro">Select your necessary items</h2>
+    <br>
+
+
+    <div class="clearfix">
+      <div class="item-container">
+        <img class="productImage" src="https://m.media-amazon.com/images/I/81K6EI2aW0L._SS500_.jpg" alt="Italy" >
+        <p>Item no: 01</p>
+        <p>ASkyFullOfStar</p>
+        <h4>Coldplay</h4>
+        <p>Price : 120 taka</p>
+      </div>
+      <div class="item-container">
+        <img class="productImage" src="https://m.media-amazon.com/images/I/81H8hN+pmwL._SS500_.jpg" alt="Forest">
+        <p>Item no: 02</p>
+        <p>The Scientist</p>
+        <h4>Coldplay</h4>
+        <p>Price : 120 taka</p>
+        </div>
+      <div class="item-container">
+        <img class="productImage" src="https://m.media-amazon.com/images/I/71U0Sn3O+qL._SS500_.jpg" alt="Mountains">
+        <p>Item no: 03</p>
+        <p>Evolve</p>
+        <h4>Imagine Dragons</h4>
+        <p>Price : 1100 taka</p>
+        </div>
+    </div>
+
+    <div class="clearfix">
+      <div class="item-container">
+        <img class="productImage" src="https://m.media-amazon.com/images/I/B1TlPSY5bKS._SS500_.jpg" alt="Italy" >
+        <p>Item no: 04</p>
+        <p>÷ (Deluxe)</p>
+        <h4>Ed Sheeran</h4>
+        <p>Price : 900 taka</p>
+        </div>
+      <div class="item-container">
+        <img class="productImage" src="https://images-na.ssl-images-amazon.com/images/I/71ppskeiZgL._SX425_.jpg" alt="Forest">
+        <p>Item no: 05</p>
+        <p>Greatest Hits: "We Will Rock You" Edition</p>
+        <h4>Queen</h4>
+        <p>Price : 800 taka</p>
+      </div>
+      <div class="item-container">
+        <img class="productImage" src="https://images-na.ssl-images-amazon.com/images/I/71lfIy0%2Bu1L._SX425_.jpg" alt="Mountains">
+        <p>Item no: 06</p>
+        <p>AThe Platinum Collection: Greatest Hits I, II & III</p>
+        <h4>Queen</h4>
+        <p>Price : 1300 taka</p>
+        </div>
+    </div>
+
+    <h1 class="intro">Here is the purchase form</h1>
+    <marquee>
+    <h3>****Enter the desired item number, the quantity, first and last name,
+      postcode and credit card information in the specified fields to purchase****</h3></marquee>
+
+    <div class="loginPage">
+        <div class="form">
+            <form class="loginForm" method="post">
+              <p>Enter desired item number</p>
+              <input type="text" placeholder="desired item number eg. 01" name="itemNumber" required>
+              <p>Enter item quantity</p>
+              <input type="text" placeholder="item quantity eg. 2" name="quantity" required>
+              <p>Enter first name</p>
+              <input type="text" placeholder="First name eg. Rahat" name="firstName" required>
+              <p>Enter family name</p>
+              <input type="text" placeholder="Last name eg. Rizvi" name="familyName" required>
+              <p>Enter postcode</p>
+              <input type="text" placeholder="postcode eg. 1217" name="postCode" required>
+              <p>Enter credit card number</p>
+              <input type="text" placeholder="credit card number eg. 1112223334" name="creditCard" required>
+              <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+
+
+
+  </body>
+</html>
